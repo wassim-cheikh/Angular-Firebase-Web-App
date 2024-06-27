@@ -1,0 +1,44 @@
+mat-sidenav-container{
+    
+    height : fit-content;
+    
+    background-color:#e8e9eb
+    
+
+}
+h1{
+    cursor: pointer;
+}
+
+mat-sidenav , mat-sidenav-content{
+    padding: 16px;
+}
+mat-sidenav {
+    width: 200px;
+    background-color: burlywood;
+}
+.fb {
+top: 3%;
+left: 98%;
+color: white;
+position: absolute;
+}
+.in{
+    height: 0.59cm;
+    top: 2.8%;
+left: 96%;
+color: white;
+position: absolute;
+}
+.mail{
+    top: 3%;
+left: 93.5%;
+color: white;
+position: absolute;
+}
+
+.logo {
+ transform: scale(0.8);
+    margin-top: 0.2cm;
+    width: 4.3cm;
+}

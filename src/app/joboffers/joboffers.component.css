@@ -1,0 +1,47 @@
+mat-card {
+    
+    width: 30cm;
+    height: fit-content;
+    background-color:black;
+   left: 12%;
+   margin-block: 1.75cm;
+   color: white;
+
+}
+h1 {
+    font-size: 1.5cm;
+}
+mat-card-title{
+    text-align: center;
+}
+mat-card-content {
+    font-size: large;
+    line-height: 0.75cm;
+    font-weight: 100;
+}
+label {
+    font-weight: 500;
+    color:#4eb39e;
+}
+button {
+  
+    margin-left: 13cm;
+  
+    background-color: #3F51B5;
+    height: 1cm;
+    width: 4cm;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    
+    
+
+}
+button:hover {
+    background-color: #4eb39e;
+}
+
+h1 {
+    margin-left: 5.5cm;
+}

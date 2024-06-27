@@ -1,0 +1,35 @@
+input{
+   display: block;
+   width: 12cm;
+   height: 1cm;
+   margin-block-end: 0.5cm;
+}
+label{
+   display: inline;
+}
+textarea{
+   width: 12cm;
+   height: 5cm;
+  display: block;
+  margin-block-end: 1cm;
+}
+
+.button{
+  
+margin-top: 2cm;
+
+width: 4cm;
+background-color: steelblue;
+font-weight: bold;
+height: 1.2cm;
+color: white;
+border: 0;
+border-radius: 10px;
+cursor: pointer;}
+mat-dialog-content{
+   height: 40cm;
+}
+form {
+   height: 20cm;
+   width: 20cm;
+}

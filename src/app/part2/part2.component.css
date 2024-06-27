@@ -1,0 +1,106 @@
+.img1{
+    width: 20cm;
+    height: 16cm;
+}
+div{
+    width: 100%;
+    height: 16cm;
+    position: relative;
+    background-color : #e8e9eb;
+
+}
+button{
+    position: absolute;
+    background-color: #3F51B5;
+    height: 1cm;
+    width: 4cm;
+    border: 0;
+    border-radius: 10px;
+    
+    color: white;
+    cursor: pointer;
+  top: 88%;
+  left: 70%;
+  
+  
+}
+button:hover {
+    background-color :#4eb39e;
+}
+
+h1{
+    font-size: 1.75cm;
+    position: absolute;
+  top: 16%;
+  left: 61%;
+}
+.p1 {
+    position: absolute ;
+    top : 45%;
+    left : 50% ;
+    font-size: 1.2cm;
+}
+.p2{
+    position: absolute ;
+    top : 55%;
+    left : 50% ;
+    font-size: 0.75cm;
+    font-weight: 100;
+}
+.p3 {
+    position: absolute ;
+    top : 45%;
+    left : 69.25% ;
+    font-size: 1.2cm;
+}
+.p4{
+    position: absolute ;
+    top : 55%;
+    left : 69.25% ;
+    font-size: 0.75cm;
+    font-weight: 100;
+}
+.p5 {
+    position: absolute ;
+    top : 45%;
+    left : 88% ;
+    font-size: 1.2cm;
+    
+}
+.p6{
+    position: absolute ;
+    top : 55%;
+    left : 88% ;
+    font-size: 0.75cm;
+    font-weight: 100;
+    line-height: 0.75cm;
+}
+.p7 {
+    position: absolute;
+    top: 80%;
+    left: 69%;
+    font-size: larger;
+}
+a{
+    text-decoration: underline;
+    color: black;
+}
+.img2{
+    position: absolute;
+    transform: scale(0.30);
+    top: 39%;
+    left: 39.5%;
+    
+}
+.p8{
+    position: absolute;
+    top: 87%;
+    left: 50.1%;
+    font-size: 0.7cm;
+    font-weight: 70;
+   
+   
+}
+
+
+ 

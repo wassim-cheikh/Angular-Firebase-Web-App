@@ -1,0 +1,29 @@
+
+<div class="d2" [hidden]="tab==null" *ngFor="let elt of tab"> 
+    <p *ngIf="tab==null">rien a afficher</p>
+    <mat-card>
+        
+        
+        <mat-card-content>
+            <ul>
+                <li><label>Job ID :</label> {{elt.ID}}</li>
+                <li><label>Job Title :</label> {{elt.name}}</li>
+                <li><label> Posted On :</label> {{elt.date}}</li>
+                <li><label>Deadline for Apllications :</label>  {{elt.date}}</li>
+                <li><label> Location :  </label>{{elt.location}}</li>
+                <li><label>Number of posts available : </label> {{elt.posts}}</li>
+                <li> <label>Job Type : </label>{{elt.type}}</li>
+                <li> <label>Contract : </label>{{elt.contract}}</li>
+                <li><label>Job Description : </label><br> {{elt.description}}</li>
+                <li> <label> Responsabilities : </label><br>{{elt.responsabilities}}</li>
+                <li><label> Qualifications : </label><br>{{elt.qualifications}}</li>
+            </ul>
+            <mat-card-actions >
+                <button  [hidden]="route1()"  (click)=" setID(elt.ID);settype(elt.name);opendialog()" >Apply now ! </button>
+                <button [hidden]="route2()" (click)="delete(elt.key)">Remove This Job</button>
+               
+            </mat-card-actions>
+            
+    
+        </mat-card-content></mat-card>
+    </div>

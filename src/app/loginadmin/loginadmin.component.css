@@ -1,0 +1,20 @@
+.email , .pw {
+  
+    display: block;
+   width: 7cm;
+    margin-block-start: 0.5cm;
+}
+.btn {
+    margin-block-start: 0.5cm;
+}
+
+
+form {
+    position: relative;
+   top: 4cm;
+    left: 40%;
+    height: 12cm;
+    width: fit-content;
+    
+    
+}

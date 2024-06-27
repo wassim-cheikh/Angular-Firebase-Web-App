@@ -1,0 +1,45 @@
+<mat-card class="c1">
+    <mat-card-title>TeamDoo </mat-card-title>
+    <mat-card-content>
+        
+        <mat-icon>place</mat-icon> <p class="adr">Manouba Technopark For Communication , Manouba - Tunisia .</p>
+        <mat-icon>phone</mat-icon>  <p class="tele">+216 50 740 660</p> 
+        <mat-icon>email</mat-icon>  <p class="mail">contact@smart-it.tn </p> 
+<iframe src="https://maps.google.com/maps?q=pole%20technologique%20manouba&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</mat-card-content>
+</mat-card>
+<mat-card class="c2">
+<mat-card-title>Get In Touch With Us :</mat-card-title>
+<mat-card-content>
+
+    <form [formGroup]="form" (ngSubmit)="Submit()" class="f1">
+    
+       
+        <p class="lfn" ><label >First name* :</label></p>
+        <div *ngIf="!form.get('fname').valid && form.get('fname').touched" class="err" style="color: brown;">Enter a valid name !</div>
+        <input  formControlName="fname" class="fname" type="text" placeholder="first name" id="fname"><br>
+       
+        <label  for="lname" >Last name* : </label>
+        <div *ngIf="!form.get('lname').valid && form.get('lname').touched" class="err2" style="color: brown; "> Enter a valid name !</div>
+        <input  formControlName="lname" class="lname" type="text" placeholder="last name" id="lname"><br>
+        <label  for="phone" >Phone number* :</label>
+        <input  formControlName="tel" class="tel" type="text" placeholder="+216" id="phone"><br>
+       
+        <label for="email" >Email adress* : </label>
+        <div *ngIf="!form.get('email').valid && form.get('email').touched" class="err4" style="color: brown; "> Enter a valid email !</div>
+        <input formControlName="email" class="email" type="text" placeholder="email" id="email"><br>
+        <label for="obj">Object*: </label> <br>
+        <div *ngIf="!form.get('object').valid && form.get('object').touched" class="err5" style="color: brown; "> Enter a valid Object !</div>
+        <input formControlName="object" class="obj" type="text" placeholder=" max length is 35 character" id="obj"><br>
+        <label class="descl" for="desc">Description* : </label><br>
+        <textarea formControlName="desc" class="desc" id="desc"></textarea> <br>
+       <p>* : required fields 
+        <br>You Can Submit Once All Required Fields Are Valid .
+       </p>
+       
+        <input class="btn" [disabled]="!form.valid" type="submit">
+    
+      
+    </form>
+</mat-card-content>
+</mat-card>

@@ -1,0 +1,11 @@
+
+<form  [formGroup]="form" (ngSubmit)="createAdmin()" >
+    <label for="email">Email adress : </label>
+    <input class="email" formControlName="email" type="email">
+    <label for="pw" >Password : </label>
+    <input class="pw" formControlName="password" type="text">
+    <label for="pw2" > Confirm Password : </label>
+    <input class="pw2" formControlName="password2" type="text">
+    <p *ngIf="form.get('password').value!==form.get('password2').value" style="color: brown;"> Passowrds Not Matching</p>
+    <input [disabled]="form.get('password').value!==form.get('password2').value" class="btn"  type="submit" >
+ </form>

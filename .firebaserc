@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "teamdoo-dee3b": {
+      "hosting": {
+        "projet_teamdoo": [
+          "teamdoo-dee3b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "teamdoo-dee3b"
+  }
+}

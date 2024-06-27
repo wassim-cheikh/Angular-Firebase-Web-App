@@ -1,0 +1,71 @@
+iframe{
+   
+    border: 0;
+   width: 14cm;
+   height: 10cm;
+  
+}
+.adr{
+    position: relative;
+    margin-block-end: 0.3cm;
+    margin-block-start: -0.7cm;
+    margin-left: 0.7cm;
+
+}
+.tele{
+    position: relative;
+  
+    margin-block-end: 0.3cm;
+  margin-top: -0.67cm;
+    margin-left: 0.75cm;
+
+}
+.mail{
+    position: relative;
+    margin-block-end: 0.7cm;
+    margin-top: -0.67cm;
+      margin-left: 0.75cm;
+}
+mat-icon{
+    transform: scale(0.75);
+}
+mat-card-title{
+    margin-block-end: 1cm;
+}
+.c1{
+    float: right;
+    width: 14cm;
+height: fit-content;
+margin-top: 3cm;
+margin-right: 2cm;
+  
+}
+
+
+.c2{
+    width: 15cm;
+    height: fit-content;
+    float: left;
+    margin-left: 3cm;
+    margin-top: 3cm;
+   margin-block-end: 3cm;
+}
+
+input{
+    display: block;
+    width: 12cm;
+    height: 1cm;
+}
+label{
+    display: inline;
+}
+textarea{
+    width: 12cm;
+    height: 5cm;
+    margin-block-end: 1cm;
+}
+
+.btn{
+   
+margin-top: 2cm;
+}

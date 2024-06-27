@@ -1,0 +1,30 @@
+table {
+    margin-inline-end: 0.3cm;
+    display: inline-block;
+    margin-block: 1.5cm;
+    margin-left: 0.7cm;
+    height: fit-content;
+    table-layout: fixed;
+    
+    
+}
+button {
+    float: right;
+}
+
+th{
+    width: 3.5cm;
+    text-align: left;
+    font-weight: 550;
+}
+td{
+    width: 15cm;
+    max-width: 15cm;
+}
+p {
+    overflow-wrap: break-word;
+}
+mat-dialog{
+    padding: 0px;
+
+}

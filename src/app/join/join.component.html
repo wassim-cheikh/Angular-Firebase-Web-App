@@ -1,0 +1,42 @@
+<div class="d1">
+    <img src="assets/img.png">
+    <h1>join Our family</h1>
+    <p>we are constantly looking for new members <br>
+        We offer you an extraordinary chance to learn and grow.
+        <br> Get involved with a very exciting product and a great team behind it.</p>
+        <button  (click)="scroll(d2)" mat-raised-button color="primary" class="b1"> Available Job Offers </button>
+        <button (click)="scroll(d3)"  mat-raised-button color="primary" class="b2">Apply For Internship</button>
+   
+</div>
+
+    <div #d2 class="d2">
+        <h1> <mat-icon class="ic2">arrow_right</mat-icon> Current Job Offers : </h1>
+        <app-joboffers></app-joboffers>
+    </div>
+    <mat-divider></mat-divider>
+<div #d3 class="d3">
+    <h1><mat-icon class="ic1">arrow_right</mat-icon> Apply For Internship :</h1>
+    <mat-card >
+        <mat-card-content>
+            <div class="m1">
+             <h2 class="t1"><mat-icon>arrow_right</mat-icon> What we offer to our Internees :</h2>
+             <ul class="l1"><li>An initiation to professional life .</li>
+            <li>Technical training on Odoo Framework .</li><li>A professional development environment .</li><li>A practical field of application .</li></ul></div>
+            
+            <mat-divider [vertical]="true"></mat-divider>
+            <div class="m2">
+            <h2 class="t2"><mat-icon>arrow_right</mat-icon> Profile required :</h2>
+            <ul class="l2"> <li>Familiar with Python , Css , Js .</li><li>Familiar with database SQL .</li><li>Autonomous and passionate about new technologies .</li><li>Good English level</li></ul>
+        </div></mat-card-content>
+       
+            <mat-card-actions  ><button (click)="setID(0000);settype('Internship') ; opendialog()" class="btn" >Apply now !</button></mat-card-actions>
+        </mat-card>
+</div>
+
+
+
+
+
+
+
+

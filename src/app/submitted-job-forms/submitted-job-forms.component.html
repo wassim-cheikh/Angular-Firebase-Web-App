@@ -1,0 +1,28 @@
+
+<div >     
+    <table *ngFor="let elt of tab ;" border="1cm">
+        <tr ><th  >Application ID : </th><td >{{elt.id}}</td>  </tr>
+        <tr ><th  >Application time : </th><td >{{elt.time}}</td>  </tr>
+        <tr ><th >Job ID : </th><td *ngIf ="elt.jobId==0"   >Internship </td><td *ngIf="elt.jobId!==0"  >{{elt.jobId}} <button [hidden]="display(elt.jobId)" (click)="searchjob(elt.jobId);opendialog()">View job</button></td>  </tr>
+        <tr><th>Job Title : </th><td>{{elt.type}}</td>  </tr>
+        <tr><th>First name : </th><td >{{elt.fname}}</td>  </tr>
+        <tr><th>Last name : </th><td >{{elt.lname}}</td>  </tr>
+        <tr><th>Birth date : </th><td >{{elt.date}}</td>  </tr>
+        <tr><th>Adress : </th><td >{{elt.adress}}</td>  </tr>
+        <tr><th>Phone: </th><td >{{elt.phone}}</td>  </tr>
+        <tr><th>Email : </th><td >{{elt.email}}</td>  </tr>
+        <tr><th>Cover letter : </th><td ><p>{{elt.mot}}</p></td>  </tr>
+        <tr><th>Cv : </th><td ><button (click)="searchCv(elt.id);opendialog2()">  Open cv </button></td>  </tr>
+        
+       
+    
+
+
+
+
+
+
+</table>
+</div>
+
+

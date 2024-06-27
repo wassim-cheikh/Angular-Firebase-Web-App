@@ -1,0 +1,35 @@
+<form [formGroup]="joboffer" (ngSubmit)="submit()">
+    <label for ="id" >Job Id :</label>
+    
+    <input formControlName="ID" readonly value="{{id}}" type ="text" class="id">
+    <label for ="name" >Job Name* :</label>
+    <input formControlName="name" type ="text" class="name">
+    <p style="color: brown;" *ngIf="!joboffer.get('name').valid  && joboffer.get('name').touched" >Invalid field value !</p>
+    <label for ="posts" >posts :</label>
+    <input formControlName="posts" type ="text" class="posts">
+    <p style="color: brown;" *ngIf="!joboffer.get('posts').valid  && joboffer.get('posts').touched" >Invalid field value !</p>
+    <label for ="deadline" >Application deadline* :</label>
+    <input formControlName="deadline" type ="date" class="deadline">
+    <p style="color: brown;" *ngIf="!joboffer.get('deadline').valid  && joboffer.get('deadline').touched" >Invalid field value !</p>
+    <label for ="location" >Location* :</label>
+    <input  formControlName="location" type ="text" class="location">
+    <p style="color: brown;" *ngIf="!joboffer.get('location').valid  && joboffer.get('location').touched" >Invalid field value !</p>
+    <label for ="type" >Job Type* :</label>
+    <input formControlName="type" type ="text" class="type">
+    <p style="color: brown;" *ngIf="!joboffer.get('type').valid  && joboffer.get('type').touched" >Invalid field value !</p>
+    <label for ="Contract" >Contract* : </label>
+    <input formControlName="contract" type ="text" class="contract">
+    <p style="color: brown;" *ngIf="!joboffer.get('contract').valid  && joboffer.get('contract').touched" >Invalid field value !</p>
+    <label class="l3" for ="Description" >Job description* :</label>
+    <textarea formControlName="description" type ="text" class="Description"></textarea>
+    <p style="color: brown;" *ngIf="!joboffer.get('description').valid  && joboffer.get('description').touched" >Invalid field value !</p>
+    <label class="l2" for ="responsabilities" >Responsabilities*  :</label>
+    <textarea formControlName="responsabilities" type ="text" class="responsabilities"></textarea>
+    <p style="color: brown;" *ngIf="!joboffer.get('responsabilities').valid  && joboffer.get('responsabilities').touched" >Invalid field value !</p>
+    <label class="l1" for ="Qualifications" >Qualifications* :</label>
+    <textarea formControlName="qualifications" type ="text" class=" Qualifications"></textarea>
+    <p style="color: brown;" *ngIf="!joboffer.get('qualifications').valid  && joboffer.get('qualifications').touched" >Invalid field value !</p>
+    <input [disabled]="!joboffer.valid" type="submit">
+    <p> * : required field<br>
+    you can submit once all fields are valid </p>
+</form>

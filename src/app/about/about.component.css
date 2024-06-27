@@ -1,0 +1,52 @@
+.d0 {
+    margin-left: 3cm;
+    margin-block-start: 2cm;
+    margin-block-end: 2cm;
+}
+ h1 {
+    font-size: 1.5cm;
+    font-weight: 150px;
+    color: #4eb39e;
+}
+ p {
+    margin-block-start: 1cm;
+    font-size: large;
+    line-height: 0.75cm;
+}
+.d1 {
+    margin-left: 7cm;
+    margin-top: 2.5cm;
+}
+.d2 {
+    margin-left: 20cm;
+    margin-top: 3cm;
+}
+.d3 {
+    margin-left: 25cm;
+    margin-top: 3cm;
+}
+img {
+    transform: scale(1.4);
+    
+}
+.d4 {
+    margin-left: 32cm;
+    margin-top: -3.5cm;
+position: absolute;
+}
+
+button{
+    
+    background-color: #3F51B5;
+    height: 1cm;
+    width: 5cm;
+    border: 0;
+    margin-left: 19.5cm;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1cm;
+}
+button:hover{
+    background-color: #4eb39e;
+}

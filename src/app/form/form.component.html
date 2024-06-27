@@ -1,0 +1,38 @@
+
+<form  [formGroup]="form" (ngSubmit)="Submit();uploadFiles();closedialog()">
+    <div *ngIf="form.get('jobId').value!==null">
+        <label for="id2">Job ID :</label>
+        <input formControlName="jobId" class="id2" type="text" readonly value={{jid}}>
+    </div>
+    <label for="id">Application ID :</label>
+    <input formControlName="id" class="id" type="text" readonly value={{id}}>
+    <label for="fname" >First name* :</label>
+    <input  formControlName="fname" class="fname" type="text" placeholder="first name" id="fname">
+    <p *ngIf="!form.get('fname').valid && form.get('fname').touched" class="err" style="color: brown;">Not a valid value !<p>
+    <label  for="lname" >Last name* : </label>
+    <input  formControlName="lname" class="lname" type="text" placeholder="last name" id="lname">
+    <p *ngIf="!form.get('lname').valid && form.get('lname').touched" class="err2" style="color: brown; "> Not a valid value !</p>
+    <label for="date">Birth date :</label>
+    <input formControlName="date" class="date" type="date" id="date">
+    <label for="adress" >Adress : </label>
+    <input formControlName="adress" class="adr" type="text" placeholder="adresse" id="adress">
+   
+    <label  for="phone" >Phone number* :</label>
+    <input  formControlName="tel" class="tel" type="text" placeholder="+216" id="phone">
+    <p *ngIf="!form.get('tel').valid && form.get('tel').touched" class="err3" style="color: brown; "> Not a valid value !</p>
+   
+    <label for="email" >Email adress* : </label>
+    <input formControlName="email" class="email" type="text" placeholder="email" id="email">
+    <p *ngIf="!form.get('email').valid && form.get('email').touched" class="err3" style="color: brown; "> Not a valid value !</p>
+    <label class="motl" for="mot">Cover letter* : </label>
+    <textarea formControlName="mot" class="mot" id="mot"></textarea> 
+    <label for="cv">Attach your cv* : </label> 
+    <input formControlName="cv" (change)="selectFile($event)"  class="cv" accept=".pdf" type="file" id="cv">
+    <br><p>* : required fields 
+        <br>You Can Submit Once All Required Fields Are Valid .
+       </p>
+   
+    <input [disabled]="!form.valid" type="submit">
+
+  
+</form>

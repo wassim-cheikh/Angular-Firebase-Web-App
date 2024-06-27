@@ -1,0 +1,9 @@
+iframe {
+    width: 20cm;
+    height: 20cm;
+   border-color: rgb(0, 0, 0);
+    overflow: hidden;
+    background-color: black;
+    
+    
+}

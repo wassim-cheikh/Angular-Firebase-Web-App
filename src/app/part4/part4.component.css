@@ -1,0 +1,36 @@
+div {
+    background-color:black;
+    height: 14cm;clear: both;
+}
+h1 {
+    left: 42%;
+    margin-top: 12cm;
+    position: absolute;
+    color:  #a24689;
+    cursor: pointer;
+}
+h1:hover {
+color: #4eb39e;
+}
+button{
+    margin-top: 9cm;
+    position: absolute;
+}
+img {
+    margin-top: -0.5cm;
+    height: 12cm;
+    width: 24cm;
+    position: absolute;
+    margin-left: 14cm;
+
+}
+p {
+    position: absolute;
+    margin-top: 8.5cm;
+    font-size: 1.7cm;
+    margin-left: 14cm;
+    letter-spacing: 0.5cm;
+   color:#8f8f8f;
+  font-family: 'Courier New', Courier, monospace;
+
+}
